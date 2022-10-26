@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-9">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FP.210. FullStack JS + Node.Formulario de registro y login</title>
+
+  </head>
+
+  <body>
+<h3>LOGIN</h3>
+
+<section>
+  <div class="container">
+        <div class="login">
+            <h3>Login</h3>
+            <input type="text" id="loginName" placeholder="Username"><br>
+            <input type="password" id="loginPassword" placeholder="Password"><br>
+            <button id="loginButton">Submit</button>
+            <p id="loginResult"></p> <!-- RESULT MESSAGE AFTER LOGIN -->
+        </div>
+</section>
+<script >
+const usuarios = require('../../data');
+
+document.getElementById("loginButton").onclick = function() {
+  var username = document.getElementById("loginName").value;
+  var password = document.getElementById("loginPassword").value;
+  for (var i=0; i<usuarios.length; i++) {
+      if(username == usuarios[i].username) {
+       if(password == usuarios[i].password) {
+           document.getElementById("loginResult").innerHTML = "Success!";
+       } else {
+           alert("wrong password");
+       }
+      } else {
+          alert("wrong username");
+      }
+  }
+}
+
+</script>
+</body>
+
+
+
+
+
+</html>

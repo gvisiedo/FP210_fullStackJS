@@ -1,0 +1,27 @@
+{
+  "name": "fp210_fullstackjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iawis01/FP210_fullStackJS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iawis01/FP210_fullStackJS/issues"
+  },
+  "homepage": "https://github.com/iawis01/FP210_fullStackJS#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "uuid": "^9.0.0"
+  }
+}
